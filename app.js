@@ -10,3 +10,4 @@ function initApp() {
     startHtml();
     addMember();
 }
+
