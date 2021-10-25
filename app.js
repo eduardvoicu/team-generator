@@ -155,3 +155,21 @@ function addHtml(member) {
         return resolve();
     });
 });
+}
+
+function finishHtml() {
+    const html = ` </div>
+    </div>
+    
+</body>
+</html>`;
+
+    fs.appendFile("./output/team.html", html, function (err) {
+        if (err) {
+            console.log(err);
+        };
+    });
+    console.log("end");
+}
+
+initApp();
